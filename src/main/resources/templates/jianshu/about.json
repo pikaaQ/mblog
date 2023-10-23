@@ -1,0 +1,10 @@
+{
+    "name": "jianshu",
+    "slogan": "经典主题",
+    "version": "1.0",
+    "author": "mizzle",
+    "website": "http://mtons.com",
+    "previews": [
+        "/theme/classic/dist/images/preview/1.png"
+    ]
+}
