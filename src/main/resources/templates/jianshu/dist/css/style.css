@@ -395,12 +395,12 @@ abbr[data-original-title], abbr[title] {
 
 .site-header .navbar-form {
     position: relative;
-    padding: 0px 20px;
-    margin: 11px 8px 8px;
+    padding: 0px;
+    margin: 9px 0px 10px;
 }
 
 .site-header .navbar-form .form-control {
-    padding: 8px 12px 8px 38px;
+    padding: 8px 16px;
     font-size: 15px;
     line-height: 26px;
     background-color: transparent;
@@ -409,34 +409,53 @@ abbr[data-original-title], abbr[title] {
 }
 
 .site-header .navbar-form .mac-style {
-    width: 100px;
+    width: 200px;
     transition: width 1s ease-in-out;
+}
+
+.site-header .container .search {
+    float: right;
 }
 
 .site-header .navbar-form .search-input {
     height: 37px;
-    border-radius: 3px;
+    border-radius: 18px;
     box-shadow: none;
     transition: all 0.15s ease-in 0s;
 }
 
 .site-header .navbar-form .search-btn {
     position: absolute;
-    left: 28px;
-    top: 7px;
+    width: 35px;
+    height: 35px;
+    right: 1px;
+    top: 1px;
     font-size: 15px;
     color: #ccc;
     background-color: transparent;
-    border: none;
+    border: 1px solid #ffffff;
+    background-color: #f0f0f0;
+    border-radius: 17px;
     outline: none;
 }
 
 .site-header .navbar-form .search-btn:hover {
-    color: #969696;
+    background-color: #0bacf447;
+    color: #0bacf4b5;
+}
+
+.site-header .navbar-form .search-btn .fa-search {
+    padding-left: 2px;
+    padding-bottom: 1px;
+}
+
+.site-header .navbar-form .mac-style:focus + .search-btn {
+    background-color: #0bacf447;
+    color: #0bacf4b5;
 }
 
 .site-header .navbar-form .mac-style:focus {
-    width: 200px;
+    width: 240px;
     background-color: #fafafa;
 }
 

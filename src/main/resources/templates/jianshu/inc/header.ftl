@@ -78,16 +78,6 @@
         </div>
         <div class="extra">
             <ul class="navbar-button list-inline" id="header_user">
-                <li view="search" class="hidden-xs hidden-sm">
-                    <form method="GET" action="${base}/search" accept-charset="UTF-8" class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input class="form-control search-input mac-style" placeholder="搜索" name="kw" type="text"
-                                value="${kw}">
-                            <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-                        </div>
-                    </form>
-                </li>
-
                 <#if profile??>
                     <@controls name="post">
                         <li>
@@ -122,6 +112,16 @@
         </div>
         <div class="container">
             <nav class="navbar" role="navigation">
+                <div view="search" class="hidden-xs hidden-sm search">
+                    <form method="GET" action="${base}/search" accept-charset="UTF-8" class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input class="form-control search-input mac-style" placeholder="搜索" name="kw" type="text"
+                                value="${kw}">
+                            <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <#if profile??>

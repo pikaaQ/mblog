@@ -2,20 +2,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <!--
-    ------------------------------------------------------
-     _____ ______   ________  ___       ________  ________
-    |\   _ \  _   \|\   __  \|\  \     |\   __  \|\   ____\
-    \ \  \\\__\ \  \ \  \|\ /\ \  \    \ \  \|\  \ \  \___|
-     \ \  \\|__| \  \ \   __  \ \  \    \ \  \\\  \ \  \  ___
-      \ \  \    \ \  \ \  \|\  \ \  \____\ \  \\\  \ \  \|\  \
-       \ \__\    \ \__\ \_______\ \_______\ \_______\ \_______\
-        \|__|     \|__|\|_______|\|_______|\|_______|\|_______|
-    ------------------------------------------------------------
-    version: ${site.version}
-    github : https://github.com/langhsu/mblog
-    ------------------------------------------------------------
-    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if IE]>
@@ -27,7 +13,7 @@
     </@layout.block>
 
     <@layout.block name="keywords">
-        <meta name="keywords" content="mtons, ${options['site_keywords']}">
+        <meta name="keywords" content="${options['site_keywords']}">
     </@layout.block>
 
     <@layout.block name="keywords">
@@ -36,7 +22,7 @@
 
     <meta name="mtons:mblog" content="${site.version}">
 
-    ${options['site_metas']}
+    <meta name="mtons:mblog" content="${options['site_metas']}">
 
     <link href="${base}/dist/vendors/pace/themes/pace-theme-minimal.css" rel="stylesheet"/>
     <link href="${base}/dist/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
