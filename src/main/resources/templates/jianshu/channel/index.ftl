@@ -23,17 +23,21 @@
                         </ul>
                     </div>
 
-                    <!-- Pager -->
-                    <div class="text-center">
-                        <@utils.pager request.requestURI!"", results, 5/>
-                    </div>
+                    <#if results.totalPages gt 1>
+                        <div class="text-center">
+                            <!-- Pager -->
+                            <@utils.pager request.requestURI!"", results, 5/>
+                        </div>
+                    </#if>
                 </@contents>
 
             </div>
 
+            <!--
             <div class="col-xs-12 col-md-3 side-right">
                 <@layout.extends name="/inc/right.ftl" />
             </div>
+            -->
         </div>
     </@layout.put>
 </@layout.extends>

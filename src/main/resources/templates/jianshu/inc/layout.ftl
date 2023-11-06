@@ -22,7 +22,7 @@
 
     <meta name="mtons:mblog" content="${site.version}">
 
-    <meta name="mtons:mblog" content="${options['site_metas']}">
+    <meta name="meta" content="${options['site_metas']}">
 
     <link href="${base}/dist/vendors/pace/themes/pace-theme-minimal.css" rel="stylesheet"/>
     <link href="${base}/dist/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
